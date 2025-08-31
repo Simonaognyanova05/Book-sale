@@ -1,15 +1,20 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Home from "./components/Home";
-import Overview from "./components/Overview";
+import Login from "./components/Login/Login";
 
+import { Route, Routes } from "react-router-dom";
+import Main from "./components/Main";
 
 function App() {
   return (
     <>
       <Header />
-      <Home />
-      <Overview />
+
+
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path='/login' element={<Login />} />
+      </Routes>
       <Footer />
     </>
   );

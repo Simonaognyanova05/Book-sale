@@ -1,0 +1,87 @@
+/* LOGIN BOX */
+.login-box {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 380px;
+    /* центрирана кутия на десктоп */
+    text-align: center;
+    margin: 50px auto;
+    /* центрира формата вертикално със spacing */
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #f97316;
+    /* оранжев акцент */
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 14px 16px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.login-box input:focus {
+    border-color: #f97316;
+    box-shadow: 0 0 5px rgba(249, 115, 22, 0.4);
+}
+
+.login-box button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 14px;
+    background: #f97316;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-box button:hover {
+    background: #ea580c;
+}
+
+.login-box p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-box p a {
+    color: #f97316;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 25px 20px;
+        border-radius: 15px;
+        margin: 30px 15px;
+        /* по-малко разстояние от краищата */
+    }
+
+    .login-box h2 {
+        font-size: 1.4rem;
+    }
+
+    .login-box input,
+    .login-box button {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
