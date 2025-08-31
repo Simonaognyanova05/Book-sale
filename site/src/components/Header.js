@@ -1,58 +1,38 @@
 export default function Header() {
     return (
-        <nav className="navbar navbar-expand-lg bg-white shadow-lg fixed-top">
-            <div className="container">
-                <a className="navbar-brand" href="#section_1">
-                    <i className="navbar-brand-icon bi-book me-2"></i>
-                    <span>ebook</span>
-                </a>
+        <>
+            <header id="mu-header" class="" role="banner">
+                <div class="container">
+                    <nav class="navbar navbar-default mu-navbar">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
 
-                <div className="d-lg-none ms-auto me-3">
-                    <a href="#" className="btn custom-btn custom-border-btn btn-naira btn-inverted">
-                        <i className="btn-icon bi-cloud-download"></i>
-                        <span>Download</span>
-                    </a>
+                                <a class="navbar-brand" href="index.html"><i class="fa fa-book" aria-hidden="true"></i> Kindle</a>
+
+
+
+                            </div>
+
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav mu-menu navbar-right">
+                                    <li><a href="#">HOME</a></li>
+                                    <li><a href="#mu-book-overview">OVERVIEW</a></li>
+                                    <li><a href="#mu-author">AUTHOR</a></li>
+                                    <li><a href="#mu-pricing">PRICE</a></li>
+                                    <li><a href="#mu-testimonials">TESTIMONIALS</a></li>
+                                    <li><a href="#mu-contact">CONTACT</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
-
-                <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav ms-lg-auto me-lg-4">
-                        <li className="nav-item">
-                            <a className="nav-link active" href="#section_1">Home</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#section_2">The Book</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#section_3">Author</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#section_4">Reviews</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#section_5">Contact</a>
-                        </li>
-                    </ul>
-
-                    <div className="d-none d-lg-block">
-                        <a href="#" className="btn custom-btn custom-border-btn btn-naira btn-inverted">
-                            <i className="btn-icon bi-cloud-download"></i>
-                            <span>Download</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
+            </header>
+        </>
     );
 }
