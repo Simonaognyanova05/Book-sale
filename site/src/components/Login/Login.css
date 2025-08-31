@@ -66,6 +66,18 @@
     font-weight: 600;
 }
 
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    /* 80px = височината на менюто */
+    background: #f97316;
+    /* твоят фон */
+    padding-top: 40px;
+}
+
+
 /* Responsive tweaks */
 @media (max-width: 480px) {
     .login-box {
