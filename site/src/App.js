@@ -4,6 +4,7 @@ import Login from "./components/Login/Login";
 
 import { Route, Routes } from "react-router-dom";
 import Main from "./components/Main";
+import HomeForm from "./components/HomeForm/HomeForm";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/editHome' element={<HomeForm />} />
+
       </Routes>
       <Footer />
     </>
