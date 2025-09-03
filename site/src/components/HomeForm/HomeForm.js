@@ -7,8 +7,8 @@ export default function HomeForm() {
                 <div class="login-box">
                     <h2>Редактиране на начална страница</h2>
                     <form>
-                        <input type="text" placeholder="Заглавие" required />
-                        <input type="text" placeholder="Описание" required />
+                        <input type="text" name="title" placeholder="Заглавие" required />
+                        <input type="text" name="description" placeholder="Описание" required />
                         <button type="submit">Редактирай</button>
                     </form>
                 </div>

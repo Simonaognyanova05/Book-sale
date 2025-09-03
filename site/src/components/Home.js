@@ -1,27 +1,44 @@
+import { useEffect, useState } from "react";
+import { getHomeInfo } from "../services/getHomeInfo";
+
 export default function Home() {
+    const [info, setInfo] = useState(null);
+
+    useEffect(() => {
+        getHomeInfo()
+            .then(res => {
+                setInfo(res);
+            })
+            .catch(e => {
+                console.log(e);
+            });
+    }, []);
+
+    if (!info) {
+        return <p>Зареждане...</p>; // докато няма данни
+    }
+
     return (
-        <>
-            <section id="mu-hero">
-                <div class="container">
-                    <div class="row">
+        <section id="mu-hero">
+            <div className="container">
+                <div className="row">
 
-                        <div class="col-md-6 col-sm-6 col-sm-push-6">
-                            <div class="mu-hero-right">
-                                <img src="assets/images/ebook.png" alt="Ebook img" />
-                            </div>
+                    <div className="col-md-6 col-sm-6 col-sm-push-6">
+                        <div className="mu-hero-right">
+                            <img src="assets/images/ebook.png" alt="Ebook img" />
                         </div>
-
-                        <div class="col-md-6 col-sm-6 col-sm-pull-6">
-                            <div class="mu-hero-left">
-                                <h1>Perfect Landing Page Template to Present Your eBook</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam saepe, recusandae quidem nulla! Eveniet explicabo perferendis aut, ab quos omnis labore laboriosam quisquam hic deserunt ipsum maxime aspernatur velit impedit.</p>
-                                <a href="#" class="mu-primary-btn">Download Now!</a>
-                            </div>
-                        </div>
-
                     </div>
+
+                    <div className="col-md-6 col-sm-6 col-sm-pull-6">
+                        <div className="mu-hero-left">
+                            <h1>{info.title}</h1>
+                            <p>{info.description}</p>
+                            <a href="#" className="mu-primary-btn">Download Now!</a>
+                        </div>
+                    </div>
+
                 </div>
-            </section>
-        </>
+            </div>
+        </section>
     );
 }
