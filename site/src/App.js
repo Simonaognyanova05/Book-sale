@@ -10,6 +10,7 @@ import AuthorForm from "./components/AuthorForm/AuthorForm";
 import PricesForm from "./components/PricesForm/PricesForm";
 import { AuthProvider } from "./contexts/AuthContext";
 import Logout from "./components/Logout";
+import VideoForm from "./components/VideoForm/VideoForm";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/editHome' element={<HomeForm />} />
           <Route path='/editOverview' element={<OverviewForm />} />
+          <Route path='/editVideo' element={<VideoForm />} />
           <Route path='/editAuthor' element={<AuthorForm />} />
           <Route path='/editPrices' element={<PricesForm />} />
           <Route path='/logout' element={<Logout />} />

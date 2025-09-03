@@ -22,6 +22,7 @@ export default function Header() {
             <ul class="nav navbar-nav mu-menu navbar-right">
                 <li><Link to="/editHome">HOME</Link></li>
                 <li><Link to="/editOverview">OVERVIEW</Link></li>
+                <li><Link to="/editVideo">Video</Link></li>
                 <li><Link to="/editAuthor">AUTHOR</Link></li>
                 <li><Link to="/editPrices">PRICE</Link></li>
                 <li><Link to="#mu-contact">CONTACT</Link></li>
