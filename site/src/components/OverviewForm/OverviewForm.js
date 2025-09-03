@@ -7,8 +7,8 @@ export default function OverviewForm() {
                 <div class="login-box">
                     <h2>Редактиране на обща страница</h2>
                     <form>
-                        <input type="text" placeholder="Описание" required />
-                        <input type="text" placeholder="Цитат от глава 1" required />
+                        <input type="text" name="description" placeholder="Описание" required />
+                        <input type="text" name="quote" placeholder="Цитат от глава 1" required />
 
                         <button type="submit">Редактирай</button>
                     </form>

@@ -1,4 +1,22 @@
+import { useState, useEffect } from "react";
+import { getOverviewInfo } from "../services/getOverviewInfo";
+
 export default function Overview() {
+    const [info, setInfo] = useState(null);
+
+    useEffect(() => {
+            getOverviewInfo()
+                .then(res => {
+                    setInfo(res);
+                })
+                .catch(e => {
+                    console.log(e);
+                });
+        }, []);
+    
+        if (!info) {
+            return <p>Зареждане...</p>; 
+        }
     return (
         <section id="mu-book-overview">
             <div class="container">
@@ -9,7 +27,7 @@ export default function Overview() {
                             <div class="mu-heading-area">
                                 <h2 class="mu-heading-title">Book Overview</h2>
                                 <span class="mu-header-dot"></span>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+                                <p>{info.description}</p>
                             </div>
 
                             <div class="mu-book-overview-content">
@@ -21,7 +39,7 @@ export default function Overview() {
                                                 <i class="fa fa-area-chart" aria-hidden="true"></i>
                                             </span>
                                             <h4>Chapter One</h4>
-                                            <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
+                                            <p>{info.quote}</p>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-sm-6">
