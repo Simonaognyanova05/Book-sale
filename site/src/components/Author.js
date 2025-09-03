@@ -1,4 +1,22 @@
+import { useState, useEffect } from "react";
+import { getAuthorInfo } from "../services/getAuthorInfo";
+
 export default function Author() {
+    const [info, setInfo] = useState(null);
+
+    useEffect(() => {
+            getAuthorInfo()
+                .then(res => {
+                    setInfo(res);
+                })
+                .catch(e => {
+                    console.log(e);
+                });
+        }, []);
+    
+        if (!info) {
+            return <p>Зареждане...</p>; 
+        }
     return (
         <>
             <section id="mu-author">
@@ -16,21 +34,20 @@ export default function Author() {
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="mu-author-image">
-                                                <img src="assets/images/author.jpg" alt="Author Image" />
+                                                <img src={info.img} alt="Author Image" />
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="mu-author-info">
-                                                <h3>John Doe</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo suscipit facilis ipsum ullam reiciendis odio error iste neque ratione libero rem accusamus voluptatibus, nihil unde maiores sunt nisi. Assumenda, consectetur.</p>
+                                                <h3>{info.names}</h3>
+                                                <p>{info.description}</p>
 
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, dolorem error neque! Dolores similique ut iusto odit esse ipsam, nesciunt pariatur animi minima maiores mollitia cupiditate ad ipsum deleniti perspiciatis!</p>
                                                 <img class="mu-author-sign" src="assets/images/author-signature.png" alt="Author Signature" />
 
                                                 <div class="mu-author-social">
-                                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                                    <a href="#"><i class="fa fa-instagram"></i></a>
-                                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                    <a href={info.facebook}><i class="fa fa-facebook"></i></a>
+                                                    <a href={info.instagram}><i class="fa fa-instagram"></i></a>
+                                                    <a href={info.linkedIn}><i class="fa fa-linkedin"></i></a>
                                                 </div>
 
                                             </div>
