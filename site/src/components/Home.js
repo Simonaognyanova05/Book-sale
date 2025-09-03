@@ -15,7 +15,7 @@ export default function Home() {
     }, []);
 
     if (!info) {
-        return <p>Зареждане...</p>; // докато няма данни
+        return <p>Зареждане...</p>; 
     }
 
     return (
