@@ -1,4 +1,22 @@
+import { useState, useEffect } from "react";
+import { getVideo } from "../services/getVideo";
+
 export default function Video() {
+    const [info, setInfo] = useState(null);
+
+    useEffect(() => {
+            getVideo()
+                .then(res => {
+                    setInfo(res);
+                })
+                .catch(e => {
+                    console.log(e);
+                });
+        }, []);
+    
+        if (!info) {
+            return <p>Зареждане...</p>; 
+        }
     return (
         <>
             <section id="mu-video-review">
@@ -10,11 +28,11 @@ export default function Video() {
                                 <div class="mu-heading-area">
                                     <h2 class="mu-heading-title">Check Out Our Video Review</h2>
                                     <span class="mu-header-dot"></span>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+                                    <p>{info.description}</p>
                                 </div>
 
                                 <div class="mu-video-review-content">
-                                    <iframe class="mu-video-iframe" width="100%" height="480" src="https://www.youtube.com/embed/T4ySAlBt2Ug" frameborder="0" allowfullscreen></iframe>
+                                    <iframe class="mu-video-iframe" width="100%" height="480" src={info.video} frameborder="0" allowfullscreen></iframe>
                                 </div>
 
                             </div>
