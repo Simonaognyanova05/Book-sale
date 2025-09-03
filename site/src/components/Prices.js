@@ -1,4 +1,22 @@
+import { useState, useEffect } from "react";
+import { getPricesInfo } from "../services/getPricesInfo";
+
 export default function Prices() {
+    const [info, setInfo] = useState(null);
+
+    useEffect(() => {
+        getPricesInfo()
+            .then(res => {
+                setInfo(res);
+            })
+            .catch(e => {
+                console.log(e);
+            });
+    }, []);
+
+    if (!info) {
+        return <p>Зареждане...</p>;
+    }
     return (
         <>
             <section id="mu-pricing">
@@ -11,8 +29,7 @@ export default function Prices() {
                                     <h2 className="mu-heading-title">Our Pricing Plans</h2>
                                     <span className="mu-header-dot"></span>
                                     <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry's standard dummy text ever
+                                        {info.description}
                                     </p>
                                 </div>
 
@@ -21,14 +38,19 @@ export default function Prices() {
                                     <div className="mu-pricing-single mu-popular-price-tag">
 
                                         <div className="mu-pricing-single-head">
-                                            <h4>PROFESSIONAL PLAN</h4>
+                                            <h4>{info.orderType}</h4>
                                             <p className="mu-price-tag">
-                                                <span>$</span> 25
+                                               {info.priceLv} лв.
+
+                                            </p>
+                                            <p className="mu-price-tag">
+                                               {info.priceEuro}€
+
                                             </p>
                                         </div>
 
                                         <ul className="mu-price-feature">
-                                            <li>Lorem ipsum dolor sit amet.</li>
+                                            <li>{info.descriptionOffer}</li>
                                         </ul>
 
                                         <div className="mu-pricing-single-footer">
