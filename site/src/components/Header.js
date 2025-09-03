@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
+import { useAuth } from '../contexts/AuthContext';
 
 export default function Header() {
+    const { user } = useAuth();
 
     const unlogged = (
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -23,6 +25,8 @@ export default function Header() {
                 <li><Link to="/editAuthor">AUTHOR</Link></li>
                 <li><Link to="/editPrices">PRICE</Link></li>
                 <li><Link to="#mu-contact">CONTACT</Link></li>
+                <li><Link to="/logout">Изход</Link></li>
+
             </ul>
         </div>
     );
@@ -46,16 +50,7 @@ export default function Header() {
 
                             </div>
 
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                <ul class="nav navbar-nav mu-menu navbar-right">
-                                    <li><a href="#">HOME</a></li>
-                                    <li><a href="#mu-book-overview">OVERVIEW</a></li>
-                                    <li><a href="#mu-author">AUTHOR</a></li>
-                                    <li><a href="#mu-pricing">PRICE</a></li>
-                                    <li><a href="#mu-testimonials">TESTIMONIALS</a></li>
-                                    <li><a href="#mu-contact">CONTACT</a></li>
-                                </ul>
-                            </div>
+                            {Boolean(user.email) ? logged : unlogged}
                         </div>
                     </nav>
                 </div>
