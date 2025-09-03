@@ -8,22 +8,25 @@ import HomeForm from "./components/HomeForm/HomeForm";
 import OverviewForm from "./components/OverviewForm/OverviewForm";
 import AuthorForm from "./components/AuthorForm/AuthorForm";
 import PricesForm from "./components/PricesForm/PricesForm";
+import { AuthProvider } from "./contexts/AuthContext";
 
 function App() {
   return (
     <>
-      <Header />
+      <AuthProvider>
+        <Header />
 
 
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/editHome' element={<HomeForm />} />
-        <Route path='/editOverview' element={<OverviewForm />} />
-        <Route path='/editAuthor' element={<AuthorForm />} />
-        <Route path='/editPrices' element={<PricesForm />} />
-      </Routes>
-      <Footer />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/editHome' element={<HomeForm />} />
+          <Route path='/editOverview' element={<OverviewForm />} />
+          <Route path='/editAuthor' element={<AuthorForm />} />
+          <Route path='/editPrices' element={<PricesForm />} />
+        </Routes>
+        <Footer />
+      </AuthProvider>
     </>
   );
 }
