@@ -4,8 +4,15 @@ import { useState } from 'react';
 
 export default function OverviewForm() {
     const [formData, setFormData] = useState({
-        title: "",
-        description: ""
+        description: "",
+        quote1: "",
+        quote2: "",
+        quote3: "",
+        quote4: "",
+        quote5: "",
+        quote6: "",
+        quote7: "",
+        quote8: "",
     });
 
     // обновява state при промяна в инпутите
