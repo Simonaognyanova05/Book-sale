@@ -39,7 +39,7 @@ export default function Overview() {
                                                 <i class="fa fa-area-chart" aria-hidden="true"></i>
                                             </span>
                                             <h4>Chapter One</h4>
-                                            <p>{info.quote}</p>
+                                            <p>{info.quote1}</p>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-sm-6">
@@ -48,7 +48,7 @@ export default function Overview() {
                                                 <i class="fa fa-cubes" aria-hidden="true"></i>
                                             </span>
                                             <h4>Chapter Two</h4>
-                                            <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
+                                            <p>{info.quote2}</p>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-sm-6">
@@ -57,7 +57,7 @@ export default function Overview() {
                                                 <i class="fa fa-modx" aria-hidden="true"></i>
                                             </span>
                                             <h4>Chapter Three</h4>
-                                            <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
+                                            <p>{info.quote3}</p>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-sm-6">
@@ -66,7 +66,7 @@ export default function Overview() {
                                                 <i class="fa fa-files-o" aria-hidden="true"></i>
                                             </span>
                                             <h4>Chapter Four</h4>
-                                            <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
+                                            <p>{info.quote4}</p>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-sm-6">
@@ -75,7 +75,7 @@ export default function Overview() {
                                                 <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
                                             </span>
                                             <h4>Chapter Five</h4>
-                                            <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
+                                            <p>{info.quote5}</p>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-sm-6">
@@ -84,7 +84,7 @@ export default function Overview() {
                                                 <i class="fa fa-language" aria-hidden="true"></i>
                                             </span>
                                             <h4>Chapter Six</h4>
-                                            <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
+                                            <p>{info.quote6}</p>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-sm-6">
@@ -93,7 +93,7 @@ export default function Overview() {
                                                 <i class="fa fa-gg" aria-hidden="true"></i>
                                             </span>
                                             <h4>Chapter Seven</h4>
-                                            <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
+                                            <p>{info.quote7}</p>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-sm-6">
@@ -102,7 +102,7 @@ export default function Overview() {
                                                 <i class="fa fa-wpforms" aria-hidden="true"></i>
                                             </span>
                                             <h4>Chapter Eight</h4>
-                                            <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
+                                            <p>{info.quote8}</p>
                                         </div>
                                     </div>
 

@@ -1,6 +1,6 @@
 // services/updateHomeInfo.js
 import { doc, updateDoc } from "firebase/firestore";
-import { db } from "../config/firebase";
+import { db } from "../../config/firebase";
 
 export async function updateHomeInfo(data) {
     try {

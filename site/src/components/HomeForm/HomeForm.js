@@ -1,6 +1,6 @@
 import './HomeForm.css';
 import { useState } from "react";
-import { updateHomeInfo } from "../../services/updateHomeInfo";
+import { updateHomeInfo } from "../../services/updates/updateHomeInfo";
 
 export default function HomeForm() {
     const [formData, setFormData] = useState({
