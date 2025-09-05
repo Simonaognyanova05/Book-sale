@@ -11,6 +11,7 @@ import PricesForm from "./components/PricesForm/PricesForm";
 import { AuthProvider } from "./contexts/AuthContext";
 import Logout from "./components/Logout";
 import VideoForm from "./components/VideoForm/VideoForm";
+import ForgottenPassword from "./components/ForgottenPassword/ForgottenPassword";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
           <Route path='/editAuthor' element={<AuthorForm />} />
           <Route path='/editPrices' element={<PricesForm />} />
           <Route path='/logout' element={<Logout />} />
-
+          <Route path="/forgotten" element={<ForgottenPassword />} />
         </Routes>
         <Footer />
       </AuthProvider>

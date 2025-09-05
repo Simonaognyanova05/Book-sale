@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { login } from '../../services/login';
 import './Login.css';
 import { useAuth } from '../../contexts/AuthContext';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
     const navigate = useNavigate();
@@ -33,7 +34,7 @@ export default function Login() {
                         <input type="password" name="password" placeholder="Password" required />
                         <button type="submit">Sign In</button>
                     </form>
-                    <p>Don't have an account? <a href="#">Sign up</a></p>
+                    <p><Link to="/forgotten">Забравена парола</Link></p>
                 </div>
             </section>
 
