@@ -19,8 +19,6 @@ function App() {
     <>
       <AuthProvider>
         <Header />
-
-
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path='/login' element={<Login />} />
@@ -32,7 +30,6 @@ function App() {
           <Route path='/logout' element={<Logout />} />
           <Route path="/forgotten" element={<ForgottenPassword />} />
           <Route path="/sendComment" element={<WriteComment />} />
-
         </Routes>
         <Footer />
       </AuthProvider>
