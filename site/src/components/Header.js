@@ -13,6 +13,8 @@ export default function Header() {
                 <li><a href="#mu-pricing">PRICE</a></li>
                 <li><a href="#mu-testimonials">TESTIMONIALS</a></li>
                 <li><a href="#mu-contact">CONTACT</a></li>
+                <li><Link to="/sendComment">Коментирай</Link></li>
+
             </ul>
         </div>
     );

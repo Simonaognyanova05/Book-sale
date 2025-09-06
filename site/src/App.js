@@ -12,6 +12,7 @@ import { AuthProvider } from "./contexts/AuthContext";
 import Logout from "./components/Logout";
 import VideoForm from "./components/VideoForm/VideoForm";
 import ForgottenPassword from "./components/ForgottenPassword/ForgottenPassword";
+import WriteComment from "./components/WriteComment/WriteComment";
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
           <Route path='/editPrices' element={<PricesForm />} />
           <Route path='/logout' element={<Logout />} />
           <Route path="/forgotten" element={<ForgottenPassword />} />
+          <Route path="/sendComment" element={<WriteComment />} />
+
         </Routes>
         <Footer />
       </AuthProvider>
