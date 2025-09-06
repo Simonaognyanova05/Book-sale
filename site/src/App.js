@@ -13,6 +13,7 @@ import Logout from "./components/Logout";
 import VideoForm from "./components/VideoForm/VideoForm";
 import ForgottenPassword from "./components/ForgottenPassword/ForgottenPassword";
 import WriteComment from "./components/WriteComment/WriteComment";
+import Messages from "./components/Messages/Messages";
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
           <Route path='/logout' element={<Logout />} />
           <Route path="/forgotten" element={<ForgottenPassword />} />
           <Route path="/sendComment" element={<WriteComment />} />
+          <Route path="/messages" element={<Messages />} />
+
         </Routes>
         <Footer />
       </AuthProvider>

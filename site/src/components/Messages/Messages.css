@@ -1,0 +1,82 @@
+.messages-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: #f8f9fa;
+    padding: 40px 20px;
+}
+
+.messages-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+.messages-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.messages-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.message-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.message-item:last-child {
+    border-bottom: none;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.message-header h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #007bff;
+}
+
+.message-header span {
+    font-size: 14px;
+    color: #666;
+}
+
+.message-text {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s ease;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
+
+.no-messages {
+    text-align: center;
+    color: #888;
+    font-size: 16px;
+}
