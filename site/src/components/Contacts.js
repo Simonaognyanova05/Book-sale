@@ -1,4 +1,23 @@
+import { useNavigate } from "react-router-dom";
+import { sendMessage } from "../services/sendMessage";
+
 export default function Contacts() {
+    const navigate = useNavigate();
+
+    const sendHandler = async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(e.currentTarget);
+        const { name, email, message } = Object.fromEntries(formData);
+
+        let res = await sendMessage(name, email, message);
+        if (res.status === 200) {
+            alert("Съобщението е изратено успешно!");
+            navigate('/');
+        } else {
+            alert("Възникна грешка, моля опитайте по-късно!");
+        }
+    }
     return (
         <>
             <section id="mu-contact">
@@ -16,7 +35,7 @@ export default function Contacts() {
                                 <div class="mu-contact-content">
 
                                     <div id="form-messages"></div>
-                                    <form id="ajax-contact" method="post" action="mailer.php" class="mu-contact-form">
+                                    <form id="ajax-contact" onSubmit={sendHandler} class="mu-contact-form">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Name" id="name" name="name" required />
                                         </div>
