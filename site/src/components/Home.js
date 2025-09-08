@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getHomeInfo } from "../services/getHomeInfo";
+import { Link } from "react-router-dom";
 
 export default function Home() {
     const [info, setInfo] = useState(null);
@@ -33,7 +34,7 @@ export default function Home() {
                         <div className="mu-hero-left">
                             <h1>{info.title}</h1>
                             <p>{info.description}</p>
-                            <a href="#" className="mu-primary-btn">Download Now!</a>
+                            <Link to="/createOrder" className="mu-primary-btn">Download Now!</Link>
                         </div>
                     </div>
 

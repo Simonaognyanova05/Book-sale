@@ -14,6 +14,7 @@ import VideoForm from "./components/VideoForm/VideoForm";
 import ForgottenPassword from "./components/ForgottenPassword/ForgottenPassword";
 import WriteComment from "./components/WriteComment/WriteComment";
 import Messages from "./components/Messages/Messages";
+import CreateOrder from "./components/CreateOrder/CreateOrder";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/forgotten" element={<ForgottenPassword />} />
           <Route path="/sendComment" element={<WriteComment />} />
           <Route path="/messages" element={<Messages />} />
+          <Route path="/createOrder" element={<CreateOrder />} />
 
         </Routes>
         <Footer />
