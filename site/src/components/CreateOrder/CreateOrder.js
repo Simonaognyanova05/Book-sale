@@ -5,6 +5,7 @@ import { useState } from 'react';
 export default function CreateOrder() {
     const [formData, setFormData] = useState({
         name: "",
+        email: "",
         phoneNumber: "",
         address: "",
     });
@@ -29,11 +30,13 @@ export default function CreateOrder() {
                 <h2>Създаване на поддръжка</h2>
                 <form onSubmit={handleSubmit}>
                     <input type="text" name="name" placeholder="Име и фамилия"
-                           value={formData.name} onChange={handleChange} required />
+                        value={formData.name} onChange={handleChange} required />
+                    <input type="text" name="email" placeholder="Имейл"
+                        value={formData.email} onChange={handleChange} required />
                     <input type="text" name="phoneNumber" placeholder="Телефонен номер"
-                           value={formData.phoneNumber} onChange={handleChange} required />
+                        value={formData.phoneNumber} onChange={handleChange} required />
                     <input type="text" name="address" placeholder="Адрес"
-                           value={formData.address} onChange={handleChange} required />
+                        value={formData.address} onChange={handleChange} required />
                     <button type="submit">Създаване</button>
                 </form>
             </div>

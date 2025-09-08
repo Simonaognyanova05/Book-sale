@@ -15,6 +15,7 @@ import ForgottenPassword from "./components/ForgottenPassword/ForgottenPassword"
 import WriteComment from "./components/WriteComment/WriteComment";
 import Messages from "./components/Messages/Messages";
 import CreateOrder from "./components/CreateOrder/CreateOrder";
+import Order from './components/Order/Order';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/sendComment" element={<WriteComment />} />
           <Route path="/messages" element={<Messages />} />
           <Route path="/createOrder" element={<CreateOrder />} />
+          <Route path="/order" element={<Order />} />
 
         </Routes>
         <Footer />

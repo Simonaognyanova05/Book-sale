@@ -29,6 +29,7 @@ export default function Header() {
                 <li><Link to="/editPrices">PRICE</Link></li>
                 <li><Link to="#mu-contact">CONTACT</Link></li>
                 <li><Link to="/messages">съобщения</Link></li>
+                <li><Link to="/orders">Поръчки</Link></li>
                 <li><Link to="/logout">Изход</Link></li>
 
             </ul>
