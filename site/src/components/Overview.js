@@ -25,7 +25,7 @@ export default function Overview() {
                         <div class="mu-book-overview-area">
 
                             <div class="mu-heading-area">
-                                <h2 class="mu-heading-title">Book Overview</h2>
+                                <h2 class="mu-heading-title">ОБЩ ПРЕГЛЕД НА КНИГАТА</h2>
                                 <span class="mu-header-dot"></span>
                                 <p>{info.description}</p>
                             </div>

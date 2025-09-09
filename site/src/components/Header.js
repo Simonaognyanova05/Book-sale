@@ -7,13 +7,13 @@ export default function Header() {
     const unlogged = (
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav mu-menu navbar-right">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#mu-book-overview">OVERVIEW</a></li>
-                <li><a href="#mu-author">AUTHOR</a></li>
-                <li><a href="#mu-pricing">PRICE</a></li>
-                <li><a href="#mu-testimonials">TESTIMONIALS</a></li>
-                <li><a href="#mu-contact">CONTACT</a></li>
-                <li><Link to="/sendComment">Коментирай</Link></li>
+                <li><a href="#">НАЧАЛО</a></li>
+                <li><a href="#mu-book-overview">ОБЩ ПРЕГЛЕД</a></li>
+                <li><a href="#mu-author">АВТОР</a></li>
+                <li><a href="#mu-pricing">ЦЕНИ</a></li>
+                <li><a href="#mu-testimonials">ОТЗИВИ</a></li>
+                <li><a href="#mu-contact">КОНТАКТИ</a></li>
+                <li><Link to="/sendComment">ОСТАВИ ОТЗИВ</Link></li>
 
             </ul>
         </div>
@@ -22,15 +22,14 @@ export default function Header() {
     const logged = (
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav mu-menu navbar-right">
-                <li><Link to="/editHome">HOME</Link></li>
-                <li><Link to="/editOverview">OVERVIEW</Link></li>
-                <li><Link to="/editVideo">Video</Link></li>
-                <li><Link to="/editAuthor">AUTHOR</Link></li>
-                <li><Link to="/editPrices">PRICE</Link></li>
-                <li><Link to="#mu-contact">CONTACT</Link></li>
-                <li><Link to="/messages">съобщения</Link></li>
-                <li><Link to="/orders">Поръчки</Link></li>
-                <li><Link to="/logout">Изход</Link></li>
+                <li><Link to="/editHome">НАЧАЛО</Link></li>
+                <li><Link to="/editOverview">ОБЩ ПРЕГЛЕД</Link></li>
+                <li><Link to="/editVideo">ВИДЕО</Link></li>
+                <li><Link to="/editAuthor">АВТОР</Link></li>
+                <li><Link to="/editPrices">ЦЕНИ</Link></li>
+                <li><Link to="/messages">СЪОБЩЕНИЯ</Link></li>
+                <li><Link to="/order">ПОРЪЧКИ</Link></li>
+                <li><Link to="/logout">ИЗХОД</Link></li>
 
             </ul>
         </div>

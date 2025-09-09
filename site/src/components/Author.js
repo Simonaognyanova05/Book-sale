@@ -26,7 +26,7 @@ export default function Author() {
                             <div class="mu-author-area">
 
                                 <div class="mu-heading-area">
-                                    <h2 class="mu-heading-title">About The Author</h2>
+                                    <h2 class="mu-heading-title">ЗА АВТОРКАТА</h2>
                                     <span class="mu-header-dot"></span>
                                 </div>
 

@@ -23,13 +23,13 @@ export default function WriteComment() {
         <>
             <section class="login-section">
                 <div class="login-box">
-                    <h2>Редактиране на обща страница</h2>
+                    <h2>Вашето мнение за книгата</h2>
                     <form onSubmit={sendHandler}>
                         <input type="text" name="name" placeholder="Име и фамилия" required />
                         <input type="text" name="comment" placeholder="Коментар" required />
 
 
-                        <button type="submit">Редактирай</button>
+                        <button type="submit">Изпрати</button>
                     </form>
                 </div>
             </section>

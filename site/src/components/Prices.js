@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { getPricesInfo } from "../services/getPricesInfo";
+import { Link } from "react-router-dom";
 
 export default function Prices() {
     const [info, setInfo] = useState(null);
@@ -26,7 +27,7 @@ export default function Prices() {
                             <div className="mu-pricing-area text-center">
 
                                 <div className="mu-heading-area">
-                                    <h2 className="mu-heading-title">Our Pricing Plans</h2>
+                                    <h2 className="mu-heading-title">НАШИТЕ ЦЕНИ</h2>
                                     <span className="mu-header-dot"></span>
                                     <p>
                                         {info.description}
@@ -54,7 +55,7 @@ export default function Prices() {
                                         </ul>
 
                                         <div className="mu-pricing-single-footer">
-                                            <a href="#" className="mu-order-btn">Order Now!</a>
+                                            <Link to="/createOrder" className="mu-order-btn">НАПРАВИ ПОРЪЧКА</Link>
                                         </div>
 
                                     </div>

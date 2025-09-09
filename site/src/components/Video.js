@@ -26,7 +26,7 @@ export default function Video() {
                             <div class="mu-video-review-area">
 
                                 <div class="mu-heading-area">
-                                    <h2 class="mu-heading-title">Check Out Our Video Review</h2>
+                                    <h2 class="mu-heading-title">ВИЖТЕ НАШЕТО ВИДЕО РЕВЮ</h2>
                                     <span class="mu-header-dot"></span>
                                     <p>{info.description}</p>
                                 </div>

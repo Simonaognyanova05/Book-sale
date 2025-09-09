@@ -34,7 +34,7 @@ export default function Home() {
                         <div className="mu-hero-left">
                             <h1>{info.title}</h1>
                             <p>{info.description}</p>
-                            <Link to="/createOrder" className="mu-primary-btn">Download Now!</Link>
+                            <Link to="/createOrder" className="mu-primary-btn">ПОРЪЧАЙ СЕГА!</Link>
                         </div>
                     </div>
 

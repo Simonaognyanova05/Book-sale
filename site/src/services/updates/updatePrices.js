@@ -16,7 +16,7 @@ export async function updatePrices(data) {
 
         });
 
-        alert("Трета страница беше успешно обновена.");
+        alert("Пета страница беше успешно обновена.");
     } catch (error) {
         alert("Грешка при обновяването: " + error.message);
     }

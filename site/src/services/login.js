@@ -10,11 +10,13 @@ export async function login(email, password) {
         console.error("Firebase Auth Error Message:", error.message);
 
         if (error.code === "auth/user-not-found") {
-            throw new Error("Потребителят не съществува!");
+            alert("Потребителят не съществува!");
         } else if (error.code === "auth/wrong-password") {
-            throw new Error("Грешна парола!");
+            alert("Грешна парола!");
         } else {
-            throw new Error("Възникна грешка при влизане!");
+            alert("Възникна грешка при влизане!");
         }
+
+        return {user: "", status: 404};
     }
 }

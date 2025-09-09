@@ -21,7 +21,7 @@ export default function Testimonials() {
                         <div class="col-md-12">
                             <div class="mu-testimonials-area">
                                 <div class="mu-heading-area">
-                                    <h2 class="mu-heading-title">What Our Readers Says</h2>
+                                    <h2 class="mu-heading-title">МНЕНИЯТА НА НАШИТЕ ЧИТАТЕЛИ</h2>
                                     <span class="mu-header-dot"></span>
                                 </div>
 

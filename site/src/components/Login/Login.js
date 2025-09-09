@@ -28,11 +28,11 @@ export default function Login() {
         <>
             <section class="login-section">
                 <div class="login-box">
-                    <h2>Login</h2>
+                    <h2>Влизане</h2>
                     <form onSubmit={loginHandler}>
-                        <input type="email" name="email" placeholder="Email" required />
-                        <input type="password" name="password" placeholder="Password" required />
-                        <button type="submit">Sign In</button>
+                        <input type="email" name="email" placeholder="Имейл" required />
+                        <input type="password" name="password" placeholder="Парола" required />
+                        <button type="submit">Влизане</button>
                     </form>
                     <p><Link to="/forgotten">Забравена парола</Link></p>
                 </div>

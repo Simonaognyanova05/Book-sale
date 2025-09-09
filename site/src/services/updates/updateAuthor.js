@@ -18,7 +18,7 @@ export async function updateAuthor(data) {
 
         });
 
-        alert("Трета страница беше успешно обновена.");
+        alert("Четвърта страница беше успешно обновена.");
     } catch (error) {
         alert("Грешка при обновяването: " + error.message);
     }
