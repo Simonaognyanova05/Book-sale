@@ -29,8 +29,8 @@ export default function AuthorForm() {
     };
     return (
         <>
-            <section class="login-section">
-                <div class="login-box">
+            <section className="login-section">
+                <div className="login-box">
                     <h2>Редактиране на страница "За автора"</h2>
                     <form onSubmit={handleSubmit}>
                         <input type="text" name="names" placeholder="Имена" value={formData.names}

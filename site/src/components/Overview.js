@@ -19,87 +19,87 @@ export default function Overview() {
         }
     return (
         <section id="mu-book-overview">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="mu-book-overview-area">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-12">
+                        <div className="mu-book-overview-area">
 
-                            <div class="mu-heading-area">
-                                <h2 class="mu-heading-title">ОБЩ ПРЕГЛЕД НА КНИГАТА</h2>
-                                <span class="mu-header-dot"></span>
+                            <div className="mu-heading-area">
+                                <h2 className="mu-heading-title">ОБЩ ПРЕГЛЕД НА КНИГАТА</h2>
+                                <span className="mu-header-dot"></span>
                                 <p>{info.description}</p>
                             </div>
 
-                            <div class="mu-book-overview-content">
-                                <div class="row">
+                            <div className="mu-book-overview-content">
+                                <div className="row">
 
-                                    <div class="col-md-3 col-sm-6">
-                                        <div class="mu-book-overview-single">
-                                            <span class="mu-book-overview-icon-box">
-                                                <i class="fa fa-area-chart" aria-hidden="true"></i>
+                                    <div className="col-md-3 col-sm-6">
+                                        <div className="mu-book-overview-single">
+                                            <span className="mu-book-overview-icon-box">
+                                                <i className="fa fa-area-chart" aria-hidden="true"></i>
                                             </span>
                                             <h4>Chapter One</h4>
                                             <p>{info.quote1}</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-3 col-sm-6">
-                                        <div class="mu-book-overview-single">
-                                            <span class="mu-book-overview-icon-box">
-                                                <i class="fa fa-cubes" aria-hidden="true"></i>
+                                    <div className="col-md-3 col-sm-6">
+                                        <div className="mu-book-overview-single">
+                                            <span className="mu-book-overview-icon-box">
+                                                <i className="fa fa-cubes" aria-hidden="true"></i>
                                             </span>
                                             <h4>Chapter Two</h4>
                                             <p>{info.quote2}</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-3 col-sm-6">
-                                        <div class="mu-book-overview-single">
-                                            <span class="mu-book-overview-icon-box">
-                                                <i class="fa fa-modx" aria-hidden="true"></i>
+                                    <div className="col-md-3 col-sm-6">
+                                        <div className="mu-book-overview-single">
+                                            <span className="mu-book-overview-icon-box">
+                                                <i className="fa fa-modx" aria-hidden="true"></i>
                                             </span>
                                             <h4>Chapter Three</h4>
                                             <p>{info.quote3}</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-3 col-sm-6">
-                                        <div class="mu-book-overview-single">
-                                            <span class="mu-book-overview-icon-box">
-                                                <i class="fa fa-files-o" aria-hidden="true"></i>
+                                    <div className="col-md-3 col-sm-6">
+                                        <div className="mu-book-overview-single">
+                                            <span className="mu-book-overview-icon-box">
+                                                <i className="fa fa-files-o" aria-hidden="true"></i>
                                             </span>
                                             <h4>Chapter Four</h4>
                                             <p>{info.quote4}</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-3 col-sm-6">
-                                        <div class="mu-book-overview-single">
-                                            <span class="mu-book-overview-icon-box">
-                                                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                    <div className="col-md-3 col-sm-6">
+                                        <div className="mu-book-overview-single">
+                                            <span className="mu-book-overview-icon-box">
+                                                <i className="fa fa-file-pdf-o" aria-hidden="true"></i>
                                             </span>
                                             <h4>Chapter Five</h4>
                                             <p>{info.quote5}</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-3 col-sm-6">
-                                        <div class="mu-book-overview-single">
-                                            <span class="mu-book-overview-icon-box">
-                                                <i class="fa fa-language" aria-hidden="true"></i>
+                                    <div className="col-md-3 col-sm-6">
+                                        <div className="mu-book-overview-single">
+                                            <span className="mu-book-overview-icon-box">
+                                                <i className="fa fa-language" aria-hidden="true"></i>
                                             </span>
                                             <h4>Chapter Six</h4>
                                             <p>{info.quote6}</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-3 col-sm-6">
-                                        <div class="mu-book-overview-single">
-                                            <span class="mu-book-overview-icon-box">
-                                                <i class="fa fa-gg" aria-hidden="true"></i>
+                                    <div className="col-md-3 col-sm-6">
+                                        <div className="mu-book-overview-single">
+                                            <span className="mu-book-overview-icon-box">
+                                                <i className="fa fa-gg" aria-hidden="true"></i>
                                             </span>
                                             <h4>Chapter Seven</h4>
                                             <p>{info.quote7}</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-3 col-sm-6">
-                                        <div class="mu-book-overview-single">
-                                            <span class="mu-book-overview-icon-box">
-                                                <i class="fa fa-wpforms" aria-hidden="true"></i>
+                                    <div className="col-md-3 col-sm-6">
+                                        <div className="mu-book-overview-single">
+                                            <span className="mu-book-overview-icon-box">
+                                                <i className="fa fa-wpforms" aria-hidden="true"></i>
                                             </span>
                                             <h4>Chapter Eight</h4>
                                             <p>{info.quote8}</p>

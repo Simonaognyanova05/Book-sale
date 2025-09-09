@@ -26,8 +26,8 @@ export default function PricesForm() {
     };
     return (
         <>
-            <section class="login-section">
-                <div class="login-box">
+            <section className="login-section">
+                <div className="login-box">
                     <h2>Редактиране на страница "Цени"</h2>
                     <form onSubmit={handleSubmit}>
                         <input type="text" name="description" placeholder="Описание" value={formData.description}

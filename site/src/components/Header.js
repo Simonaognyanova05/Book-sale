@@ -5,8 +5,8 @@ export default function Header() {
     const { user } = useAuth();
 
     const unlogged = (
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav mu-menu navbar-right">
+        <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul className="nav navbar-nav mu-menu navbar-right">
                 <li><a href="#">НАЧАЛО</a></li>
                 <li><a href="#mu-book-overview">ОБЩ ПРЕГЛЕД</a></li>
                 <li><a href="#mu-author">АВТОР</a></li>
@@ -20,8 +20,8 @@ export default function Header() {
     );
 
     const logged = (
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav mu-menu navbar-right">
+        <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul className="nav navbar-nav mu-menu navbar-right">
                 <li><Link to="/editHome">НАЧАЛО</Link></li>
                 <li><Link to="/editOverview">ОБЩ ПРЕГЛЕД</Link></li>
                 <li><Link to="/editVideo">ВИДЕО</Link></li>
@@ -36,19 +36,19 @@ export default function Header() {
     );
     return (
         <>
-            <header id="mu-header" class="" role="banner">
-                <div class="container">
-                    <nav class="navbar navbar-default mu-navbar">
-                        <div class="container-fluid">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
+            <header id="mu-header" className="" role="banner">
+                <div className="container">
+                    <nav className="navbar navbar-default mu-navbar">
+                        <div className="container-fluid">
+                            <div className="navbar-header">
+                                <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span className="sr-only">Toggle navigation</span>
+                                    <span className="icon-bar"></span>
+                                    <span className="icon-bar"></span>
+                                    <span className="icon-bar"></span>
                                 </button>
 
-                                <Link class="navbar-brand" to="/"><i class="fa fa-book" aria-hidden="true"></i> Kindle</Link>
+                                <Link className="navbar-brand" to="/"><i className="fa fa-book" aria-hidden="true"></i> Kindle</Link>
 
 
 

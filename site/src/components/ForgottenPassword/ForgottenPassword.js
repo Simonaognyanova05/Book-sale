@@ -25,8 +25,8 @@ export default function ForgottenPassword() {
     };
     return (
         <>
-            <section class="login-section">
-                <div class="login-box">
+            <section className="login-section">
+                <div className="login-box">
                     <h2>Забравена парола</h2>
                     <form onSubmit={handleSubmit}>
                         <input

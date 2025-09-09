@@ -16,17 +16,17 @@ export default function Testimonials() {
     return (
         <>
             <section id="mu-testimonials">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="mu-testimonials-area">
-                                <div class="mu-heading-area">
-                                    <h2 class="mu-heading-title">МНЕНИЯТА НА НАШИТЕ ЧИТАТЕЛИ</h2>
-                                    <span class="mu-header-dot"></span>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="mu-testimonials-area">
+                                <div className="mu-heading-area">
+                                    <h2 className="mu-heading-title">МНЕНИЯТА НА НАШИТЕ ЧИТАТЕЛИ</h2>
+                                    <span className="mu-header-dot"></span>
                                 </div>
 
-                                <div class="mu-testimonials-block">
-                                    <ul class="mu-testimonial-slide">
+                                <div className="mu-testimonials-block">
+                                    <ul className="mu-testimonial-slide">
                                         {comments.map(x => <TestimonialsItem comment={x} />)}
 
                                     </ul>

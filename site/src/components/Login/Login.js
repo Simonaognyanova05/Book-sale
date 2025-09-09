@@ -26,8 +26,8 @@ export default function Login() {
     }
     return (
         <>
-            <section class="login-section">
-                <div class="login-box">
+            <section className="login-section">
+                <div className="login-box">
                     <h2>Влизане</h2>
                     <form onSubmit={loginHandler}>
                         <input type="email" name="email" placeholder="Имейл" required />

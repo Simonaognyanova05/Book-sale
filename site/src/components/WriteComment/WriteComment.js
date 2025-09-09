@@ -21,8 +21,8 @@ export default function WriteComment() {
     }
     return (
         <>
-            <section class="login-section">
-                <div class="login-box">
+            <section className="login-section">
+                <div className="login-box">
                     <h2>Вашето мнение за книгата</h2>
                     <form onSubmit={sendHandler}>
                         <input type="text" name="name" placeholder="Име и фамилия" required />

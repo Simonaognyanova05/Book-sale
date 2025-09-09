@@ -21,31 +21,31 @@ export default function Contacts() {
     return (
         <>
             <section id="mu-contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="mu-contact-area">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="mu-contact-area">
 
-                                <div class="mu-heading-area">
-                                    <h2 class="mu-heading-title">ОСТАВЕТЕ НИ СЪОБЩЕНИЕ</h2>
-                                    <span class="mu-header-dot"></span>
+                                <div className="mu-heading-area">
+                                    <h2 className="mu-heading-title">ОСТАВЕТЕ НИ СЪОБЩЕНИЕ</h2>
+                                    <span className="mu-header-dot"></span>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
                                 </div>
 
-                                <div class="mu-contact-content">
+                                <div className="mu-contact-content">
 
                                     <div id="form-messages"></div>
-                                    <form id="ajax-contact" onSubmit={sendHandler} class="mu-contact-form">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Име и фамилия" id="name" name="name" required />
+                                    <form id="ajax-contact" onSubmit={sendHandler} className="mu-contact-form">
+                                        <div className="form-group">
+                                            <input type="text" className="form-control" placeholder="Име и фамилия" id="name" name="name" required />
                                         </div>
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Имейл" id="email" name="email" required />
+                                        <div className="form-group">
+                                            <input type="email" className="form-control" placeholder="Имейл" id="email" name="email" required />
                                         </div>
-                                        <div class="form-group">
-                                            <textarea class="form-control" placeholder="Съобщение" id="message" name="message" required></textarea>
+                                        <div className="form-group">
+                                            <textarea className="form-control" placeholder="Съобщение" id="message" name="message" required></textarea>
                                         </div>
-                                        <button type="submit" class="mu-send-msg-btn"><span>ИЗПРАТИ</span></button>
+                                        <button type="submit" className="mu-send-msg-btn"><span>ИЗПРАТИ</span></button>
                                     </form>
 
                                 </div>
