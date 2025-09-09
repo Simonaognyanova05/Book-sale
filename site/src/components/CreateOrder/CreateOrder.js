@@ -27,7 +27,7 @@ export default function CreateOrder() {
     return (
         <section className="login-section">
             <div className="login-box">
-                <h2>Създаване на поддръжка</h2>
+                <h2>Създаване на поръчка</h2>
                 <form onSubmit={handleSubmit}>
                     <input type="text" name="name" placeholder="Име и фамилия"
                         value={formData.name} onChange={handleChange} required />
@@ -37,6 +37,7 @@ export default function CreateOrder() {
                         value={formData.phoneNumber} onChange={handleChange} required />
                     <input type="text" name="address" placeholder="Адрес"
                         value={formData.address} onChange={handleChange} required />
+                        <p><b>Начин на плащане:</b> наложен платеж</p>
                     <button type="submit">Създаване</button>
                 </form>
             </div>

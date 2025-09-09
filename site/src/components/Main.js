@@ -13,9 +13,9 @@ export default function Main() {
             <main role="main">
 
                 <Overview />
+                <Prices />
                 <Video />
                 <Author />
-                <Prices />
                 <Testimonials />
                 <Contacts />
 

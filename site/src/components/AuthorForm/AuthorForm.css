@@ -14,7 +14,7 @@
 
 .login-box h2 {
     margin-bottom: 20px;
-    color: #f97316;
+    color: #008A2C;
     /* оранжев акцент */
     font-weight: 600;
     font-size: 1.6rem;
@@ -32,7 +32,7 @@
 }
 
 .login-box input:focus {
-    border-color: #f97316;
+    border-color: #008A2C;
     box-shadow: 0 0 5px rgba(249, 115, 22, 0.4);
 }
 
@@ -40,7 +40,7 @@
     margin-top: 20px;
     width: 100%;
     padding: 14px;
-    background: #f97316;
+    background: #008A2C;
     color: white;
     border: none;
     border-radius: 25px;
@@ -51,7 +51,7 @@
 }
 
 .login-box button:hover {
-    background: #ea580c;
+    background: #008A2C;
 }
 
 .login-box p {
@@ -61,7 +61,7 @@
 }
 
 .login-box p a {
-    color: #f97316;
+    color: #008A2C;
     text-decoration: none;
     font-weight: 600;
 }
@@ -72,7 +72,7 @@
     align-items: center;
     min-height: calc(100vh - 80px);
     /* 80px = височината на менюто */
-    background: #f97316;
+    background: #008A2C;
     /* твоят фон */
     padding-top: 40px;
 }

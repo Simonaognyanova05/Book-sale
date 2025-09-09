@@ -37,13 +37,13 @@ export default function Contacts() {
                                     <div id="form-messages"></div>
                                     <form id="ajax-contact" onSubmit={sendHandler} class="mu-contact-form">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Name" id="name" name="name" required />
+                                            <input type="text" class="form-control" placeholder="Име и фамилия" id="name" name="name" required />
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required />
+                                            <input type="email" class="form-control" placeholder="Имейл" id="email" name="email" required />
                                         </div>
                                         <div class="form-group">
-                                            <textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>
+                                            <textarea class="form-control" placeholder="Съобщение" id="message" name="message" required></textarea>
                                         </div>
                                         <button type="submit" class="mu-send-msg-btn"><span>ИЗПРАТИ</span></button>
                                     </form>
