@@ -57,7 +57,7 @@ export default function Orders() {
     return (
         <section className="login-section">
             <div className="messages-box">
-                <h2>📨 Направени поръчки</h2>
+                <h2>📦 Направени поръчки</h2>
 
                 {orders.length > 0 ? (
                     <ul className="messages-list">
